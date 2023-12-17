@@ -1,39 +1,39 @@
-Feature: Login
+Feature: Login Test
 
-  Scenario: verifyUserShouldLoginSuccessFully()
+  Scenario: Verify user should login successfully
     Given I am on homepage
-    When Enter username
-And Enter password
-And Click on Login Button
-Then Verify "WelCome" Message
+    When  I enter username "Admin"
+    And   I enter password "admin123"
+    And   I click on login button
+    Then  I should be able to verify message "Dashboard"
+    And   I should login successfully
 
-  Scenario: verifyThatTheLogoDisplayOnHomePage()
+  Scenario:  Verify the logo display on home page
     Given I am on homepage
-    When Login To The application
-    Then Verify Logo is Displayed
+    When  I enter username "Admin"
+    And   I enter password "admin123"
+    And   I click on login button
+    Then  I should be able to verify the  logo is displayed
 
-  Scenario: verifyUserShouldLogOutSuccessFully()
+  Scenario: Verify user should logout successfully
     Given I am on homepage
-    When Login To The application
-And Click on User Profile logo
-    And Mouse hover on "Logout" and click
-    Then Verify the text "Login Panel" is displayed
+    When  I enter username "Admin"
+    And   I enter password "admin123"
+    And   I click on login button
+    Then  I click on user profile logo
+    And   I mouse hover on logout and click
+    Then  I can verify the text "Login Panel" is displayed
 
-  Scenario Outline: verifyErrorMessageWithInvalidCredentials()
+  Scenario Outline: User should not login successfully
     Given I am on homepage
-When Enter username <username>
-    And Enter password <password>
-    And Click on Login Button
-    Then Verify Error message <errorMessage>
+    When I enter username <username>
+    And I enter password <password>
+    And I click on login button
+    Then I can verify the text <errorMessage>
 
     Examples:
-username password errorMessage
-Required
-test123@gmail.com Required
-test123 Required
-test123@gmail.com test123 Invalid credentials
-
-      | email              | password | errorMessage                                                                                |
-      | abcd123@gmail.com  | xyz123   | Login was unsuccessful. Please correct the errors and try again.\nNo customer account found |
-      | xyz123@gmail.com   | abc123   | Login was unsuccessful. Please correct the errors and try again.\nNo customer account found |
-      | adfafasd@gmail.com | xyz123   | Login was unsuccessful. Please correct the errors and try again.\nNo customer account found |
+      | username          | password | errorMessage        |
+      |                   |          | Required            |
+      | test123@gmail.com |          | Required            |
+      |                   | test123  | Required            |
+      | test123@gmail.com | test123  | Invalid Credentials |

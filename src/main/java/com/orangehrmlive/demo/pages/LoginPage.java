@@ -2,54 +2,73 @@ package com.orangehrmlive.demo.pages;
 
 
 import com.orangehrmlive.demo.utility.Utility;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends Utility {
 
-    @CacheLookup
-    @FindBy(xpath = "//h5[normalize-space()='Login']")
-    WebElement loginText;
+    private static final Logger log = LogManager.getLogger(LoginPage.class.getName());
+
+    public LoginPage() {
+        PageFactory.initElements(driver, this);
+    }
 
     @CacheLookup
     @FindBy(name = "username")
-    WebElement username;
+    WebElement userNameField;
 
     @CacheLookup
     @FindBy(name = "password")
-    WebElement password;
+    WebElement passwordField;
 
     @CacheLookup
     @FindBy(xpath = "//button[normalize-space()='Login']")
     WebElement loginButton;
 
     @CacheLookup
-    @FindBy(xpath = "//div[@class='message-error validation-summary-errors']")
-    WebElement textInvalidCredentials;
+    @FindBy(id = "logInPanelHeading")
+    WebElement loginPanelText;
+    @CacheLookup
+    @FindBy(linkText = "Logout")
+    WebElement logoutTab;
+    @CacheLookup
+    @FindBy(xpath = "//h5[normalize-space()='Login']")
+    WebElement loginPanel;
 
-    public void enterUsername(String userId) {
-        sendTextToElement(username, userId);
+    public void enterUserName(String username){
+        log.info("Enter username  " + username + " to username  field " + userNameField.toString());
+        sendTextToElement(userNameField,username);
     }
 
-    public void enterPassword(String passWord) {
-        sendTextToElement(password, passWord);
+    public void enterPassword(String password){
+        log.info("Enter Password  " + password + " to Password  field " + passwordField.toString());
+        sendTextToElement(passwordField,password);
     }
 
-    public String verifyTextLogin() {
-        return getTextFromElement(loginText);
-    }
-
-    public void clickOnLoginButton() {
+    public void clickOnLoginButton(){
+        log.info("Click On Login Button");
         clickOnElement(loginButton);
     }
 
-    public void loginSuccessfully(String userName, String passWord) {
-        sendTextToElement(username, userName);
-        sendTextToElement(password, passWord);
-        clickOnElement(loginButton);
+    public void loginToApplication() {
+
     }
-    public String verifyTextInvalidCredentials() {
-        return getTextFromElement(textInvalidCredentials);
+
+    public String getLoginPanelText() {
+        log.info("Get login panel text");
+        return getTextFromElement(loginPanelText);
+    }
+
+    public void mouseHoverAndClickOnLogout() {
+        log.info("Mouse hover and click on logout tab");
+        mouseHoverToElementAndClick(logoutTab);
+    }
+
+    public String getLoginText() {
+        return getTextFromElement(loginPanel);
     }
 }

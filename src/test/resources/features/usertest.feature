@@ -1,64 +1,54 @@
-Feature: Users
+Feature: Users Test
+# Ananya Dash - does not work
 
-  Scenario: adminShouldAddUserSuccessFully()
+  Background:
     Given I am on homepage
-Login to Application
-click On "Admin" Tab
-Verify "System Users" Text
-click On "Add" button
-Verify "Add User" Text
-Select User Role "Admin"
-enter Employee Name "Ananya Dash"
-enter Username
-Select status "Disable"
-enter psaaword
-enter Confirm Password
-click On "Save" Button
-verify message "Successfully Saved"
+    When  I enter username "Admin"
+    And   I enter password "admin123"
+    Then  I click on login button
+    When  I click on admin tab
+    And   I should be able to verify "System Users" text
 
-  Scenario: searchTheUserCreatedAndVerifyIt()
-    Given I am on homepage
-Login to Application
-click On "Admin" Tab
-Verify "System Users" Text
-Enter Username
-Select User Role
-Select Satatus
-Click on "Search" Button
-Verify the User should be in Result list.
 
-  Scenario: verifyThatAdminShouldDeleteTheUserSuccessFully()
-    Given I am on homepage
-Login to Application
-click On "Admin" Tab
-Verify "System Users" Text
-Enter Username
-Select User Role
-Select Satatus
-Click on "Search" Button
-Verify the User should be in Result list.
-Click on Check box
-Click on Delete Button
-Popup will display
-Click on Ok Button on Popup
-verify message "Successfully Deleted"
+  Scenario: Admin should add user successfully
+    When  I click on add button
+    And   I can verify "Add User" text
+    And   I select user role "Admin"
+    And   I enter employee name "Orange  Test"
+    When  I enter username "Orange.Test" into username field
+    And   I select status "Disable"
+    And   I enter password "Orange123456!"into password field
+    And   I enter confirm password "Orange123456!"
+    And   I click on save button
+    Then  I am able to verify message "Successfully saved"
 
-  Scenario: searchTheUserAndVerifyTheMessageRecordFound()
-    Given I am on homepage
-Login to Application
-click On "Admin" Tab
-Verify "System Users" Text
-Enter Username <username>
-Select User Role <userRole>
-Enter EmployeeName <employeeName>
-Select Satatus <status>
-Click on "Search" Button
-verify message "(1) Record Found"
-Verify username <username>
-Click on Reset Tab
-Data Set
-username userrole employeeName Status
-Admin Admin Paul Collings Enable
-Cassidy.Hope ESS Cassidy Hope Enable
-Nina.Patel ESS Nina Patel Enable
-Odis.Adalwin Admin Odis Adalwin Enable
+  Scenario: Admin search the user created and verify user
+    When  I enter username "Orange.Test" into username field
+    And   I select user role "Admin"
+    And   I click on search button
+    Then  I should be able to verify the user should be in result list
+
+  Scenario: Verify admin should delete the user successfully
+    When  I enter username "Orange.Test" into username field
+    And   I select user role "Admin"
+    And   I click on search button
+    Then  I should be able to verify the user should be in result list
+    When  I click on check box
+    And   I click on delete button
+    And   Popup will display
+    Then  Click on ok button on popup
+    And   I am able to verify text "Successfully Deleted"
+
+  Scenario Outline: Search The User And Verify The Message Record Found
+    When  I enter username <username> into username field
+    And   I select user role <userrole>
+    And   I click on search button
+    Then  I should be able to verify the user should be in result list
+
+
+    Examples:
+      | username     | userrole |
+      | Admin        | Admin    |
+      | Cassidy.Hope | ESS      |
+      | Nina.Patel   | ESS      |
+      | Odis.Adalwin | Admin    |
