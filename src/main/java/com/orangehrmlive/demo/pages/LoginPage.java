@@ -32,12 +32,29 @@ public class LoginPage extends Utility {
     @CacheLookup
     @FindBy(id = "logInPanelHeading")
     WebElement loginPanelText;
+
     @CacheLookup
     @FindBy(linkText = "Logout")
     WebElement logoutTab;
+
     @CacheLookup
     @FindBy(xpath = "//h5[normalize-space()='Login']")
     WebElement loginPanel;
+
+    @CacheLookup
+    @FindBy(xpath = "//div[@class='orangehrm-login-slot-wrapper']//div[1]//div[1]//span[1]")
+    WebElement usernameRequiredText;
+
+    @CacheLookup
+    @FindBy(xpath = "//div[@class='orangehrm-login-slot-wrapper']//div[1]//div[1]//span[1]")
+    WebElement passwordRequiredText;
+
+    @CacheLookup
+    @FindBy(xpath = "//p[@class='oxd-text oxd-text--p oxd-alert-content-text']")
+    WebElement invalidCredentialsText;
+
+
+
 
     public void enterUserName(String username){
         log.info("Enter username  " + username + " to username  field " + userNameField.toString());
@@ -71,4 +88,23 @@ public class LoginPage extends Utility {
     public String getLoginText() {
         return getTextFromElement(loginPanel);
     }
+
+
+    public String getUsernameRequiredText() {
+        return getTextFromElement(usernameRequiredText);
+    }
+
+
+    public String getPasswordRequiredText() {
+        return getTextFromElement(passwordRequiredText);
+    }
+
+
+    public String getInvalidCredentialsText() {
+        return getTextFromElement(invalidCredentialsText);
+    }
+
+
+
+
 }

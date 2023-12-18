@@ -52,3 +52,103 @@
 2023-12-17 17:12:368 INFO  LoginPage :53 - Click On Login Button
 2023-12-17 17:12:430 INFO  DashboardPage :31 - Click on admin tab
 2023-12-17 17:12:593 INFO  ViewSystemUsersPage :62 - Verify system users text
+2023-12-17 21:12:924 INFO  LoginPage :43 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (01cd6187f4626cfac11b4bf71a8d035c)] -> name: username]
+2023-12-17 21:12:52 INFO  LoginPage :48 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (01cd6187f4626cfac11b4bf71a8d035c)] -> name: password]
+2023-12-17 21:12:164 INFO  LoginPage :53 - Click On Login Button
+2023-12-17 21:12:971 INFO  DashboardPage :27 - get actual title text of register page
+2023-12-17 21:12:12 INFO  LoginPage :43 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (1e45fbb19aac3d7696bbd0ec2e41f523)] -> name: username]
+2023-12-17 21:12:122 INFO  LoginPage :48 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (1e45fbb19aac3d7696bbd0ec2e41f523)] -> name: password]
+2023-12-17 21:12:228 INFO  LoginPage :53 - Click On Login Button
+2023-12-17 21:12:323 INFO  HomePage :47 - Verify logo is displayed
+2023-12-17 21:12:815 INFO  LoginPage :43 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (3ee355d259f86d6792998b40eb26ea37)] -> name: username]
+2023-12-17 21:12:969 INFO  LoginPage :48 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (3ee355d259f86d6792998b40eb26ea37)] -> name: password]
+2023-12-17 21:12:104 INFO  LoginPage :53 - Click On Login Button
+2023-12-17 21:12:175 INFO  HomePage :57 - Click on user profile logo
+2023-12-17 21:12:320 INFO  LoginPage :67 - Mouse hover and click on logout tab
+2023-12-17 21:12:449 INFO  LoginPage :43 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (456b4fd4af74e359e537e9c79a2109b4)] -> name: username]
+2023-12-17 21:12:552 INFO  LoginPage :48 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (456b4fd4af74e359e537e9c79a2109b4)] -> name: password]
+2023-12-17 21:12:641 INFO  LoginPage :53 - Click On Login Button
+2023-12-17 21:12:718 INFO  DashboardPage :31 - Click on admin tab
+2023-12-17 21:12:810 INFO  ViewSystemUsersPage :62 - Verify system users text
+2023-12-17 21:12:38 INFO  ViewSystemUsersPage :71 - Click on admin tab
+2023-12-17 21:12:358 INFO  AddUserPage :54 - Verify add user text
+2023-12-17 21:12:570 INFO  ViewSystemUsersPage :76 - Select user role from dropdown
+2023-12-17 21:12:810 INFO  AddUserPage :58 - Enter employee name 
+2023-12-17 21:12:140 INFO  LoginPage :43 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (136cf36d0524923392150035bbefedf2)] -> name: username]
+2023-12-17 21:12:252 INFO  LoginPage :48 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (136cf36d0524923392150035bbefedf2)] -> name: password]
+2023-12-17 21:12:354 INFO  LoginPage :53 - Click On Login Button
+2023-12-17 21:12:440 INFO  DashboardPage :31 - Click on admin tab
+2023-12-17 21:12:480 INFO  ViewSystemUsersPage :62 - Verify system users text
+2023-12-17 21:12:791 INFO  AddUserPage :67 - Enter username   to username  field Proxy element for: DefaultElementLocator 'By.cssSelector: div[class='oxd-form-row'] div[class='oxd-grid-2 orangehrm-full-width-grid'] div[class='oxd-grid-item oxd-grid-item--gutters'] div[class='oxd-input-group oxd-input-field-bottom-space'] div input[class='oxd-input oxd-input--active']'
+2023-12-17 21:12:831 INFO  LoginPage :43 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (9a455e3a733b896538cdc2dd8bd7cc4b)] -> name: username]
+2023-12-17 21:12:27 INFO  LoginPage :48 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (9a455e3a733b896538cdc2dd8bd7cc4b)] -> name: password]
+2023-12-17 21:12:237 INFO  LoginPage :53 - Click On Login Button
+2023-12-17 21:12:360 INFO  DashboardPage :31 - Click on admin tab
+2023-12-17 21:12:588 INFO  ViewSystemUsersPage :62 - Verify system users text
+2023-12-17 21:12:943 INFO  AddUserPage :67 - Enter username   to username  field Proxy element for: DefaultElementLocator 'By.cssSelector: div[class='oxd-form-row'] div[class='oxd-grid-2 orangehrm-full-width-grid'] div[class='oxd-grid-item oxd-grid-item--gutters'] div[class='oxd-input-group oxd-input-field-bottom-space'] div input[class='oxd-input oxd-input--active']'
+2023-12-17 21:12:454 INFO  LoginPage :43 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (fabd5b7c7ba951ea34bf8efb7f08ed9c)] -> name: username]
+2023-12-17 21:12:535 INFO  LoginPage :48 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (fabd5b7c7ba951ea34bf8efb7f08ed9c)] -> name: password]
+2023-12-17 21:12:639 INFO  LoginPage :53 - Click On Login Button
+2023-12-17 21:12:706 INFO  DashboardPage :31 - Click on admin tab
+2023-12-17 21:12:922 INFO  ViewSystemUsersPage :62 - Verify system users text
+2023-12-17 21:12:904 INFO  LoginPage :43 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (d1bcf285dee57be46dd1f622b80c8cf6)] -> name: username]
+2023-12-17 21:12:990 INFO  LoginPage :48 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (d1bcf285dee57be46dd1f622b80c8cf6)] -> name: password]
+2023-12-17 21:12:81 INFO  LoginPage :53 - Click On Login Button
+2023-12-17 21:12:157 INFO  DashboardPage :31 - Click on admin tab
+2023-12-17 21:12:443 INFO  ViewSystemUsersPage :62 - Verify system users text
+2023-12-17 21:12:01 INFO  LoginPage :43 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (cd60c94daaae3bd5ab269f4a9d4815a7)] -> name: username]
+2023-12-17 21:12:97 INFO  LoginPage :48 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (cd60c94daaae3bd5ab269f4a9d4815a7)] -> name: password]
+2023-12-17 21:12:196 INFO  LoginPage :53 - Click On Login Button
+2023-12-17 21:12:20 INFO  DashboardPage :31 - Click on admin tab
+2023-12-17 21:12:190 INFO  ViewSystemUsersPage :62 - Verify system users text
+2023-12-17 21:12:838 INFO  LoginPage :43 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (22cdc0ebf45f3ec4e427dc08aa82f716)] -> name: username]
+2023-12-17 21:12:947 INFO  LoginPage :48 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (22cdc0ebf45f3ec4e427dc08aa82f716)] -> name: password]
+2023-12-17 21:12:43 INFO  LoginPage :53 - Click On Login Button
+2023-12-17 21:12:121 INFO  DashboardPage :31 - Click on admin tab
+2023-12-17 21:12:990 INFO  ViewSystemUsersPage :62 - Verify system users text
+2023-12-17 22:12:180 INFO  LoginPage :60 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (dc2be74b49949945cc812c0e687b544a)] -> name: username]
+2023-12-17 22:12:343 INFO  LoginPage :65 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (dc2be74b49949945cc812c0e687b544a)] -> name: password]
+2023-12-17 22:12:709 INFO  LoginPage :70 - Click On Login Button
+2023-12-17 22:12:580 INFO  DashboardPage :27 - get actual title text of register page
+2023-12-17 22:12:758 INFO  LoginPage :60 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (72ee65aff9812f159992dc45a2402287)] -> name: username]
+2023-12-17 22:12:87 INFO  LoginPage :65 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (72ee65aff9812f159992dc45a2402287)] -> name: password]
+2023-12-17 22:12:311 INFO  LoginPage :70 - Click On Login Button
+2023-12-17 22:12:543 INFO  HomePage :47 - Verify logo is displayed
+2023-12-17 22:12:548 INFO  LoginPage :60 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (15e4497c9e506b19bc9799b5f00a414c)] -> name: username]
+2023-12-17 22:12:714 INFO  LoginPage :65 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (15e4497c9e506b19bc9799b5f00a414c)] -> name: password]
+2023-12-17 22:12:839 INFO  LoginPage :70 - Click On Login Button
+2023-12-17 22:12:834 INFO  HomePage :57 - Click on user profile logo
+2023-12-17 22:12:357 INFO  LoginPage :84 - Mouse hover and click on logout tab
+2023-12-17 22:12:482 INFO  LoginPage :60 - Enter username   to username  field [[ChromeDriver: chrome on windows (8f292853b670896212a8260667f642b7)] -> name: username]
+2023-12-17 22:12:580 INFO  LoginPage :65 - Enter Password   to Password  field [[ChromeDriver: chrome on windows (8f292853b670896212a8260667f642b7)] -> name: password]
+2023-12-17 22:12:672 INFO  LoginPage :70 - Click On Login Button
+2023-12-17 22:12:717 INFO  LoginPage :60 - Enter username  test123@gmail.com to username  field [[ChromeDriver: chrome on windows (4c777e1033a66adbab20a7ee8194c880)] -> name: username]
+2023-12-17 22:12:36 INFO  LoginPage :65 - Enter Password   to Password  field [[ChromeDriver: chrome on windows (4c777e1033a66adbab20a7ee8194c880)] -> name: password]
+2023-12-17 22:12:147 INFO  LoginPage :70 - Click On Login Button
+2023-12-17 22:12:445 INFO  LoginPage :60 - Enter username   to username  field [[ChromeDriver: chrome on windows (9772ad7047de544c01066aa622ef9818)] -> name: username]
+2023-12-17 22:12:577 INFO  LoginPage :65 - Enter Password  test123 to Password  field [[ChromeDriver: chrome on windows (9772ad7047de544c01066aa622ef9818)] -> name: password]
+2023-12-17 22:12:755 INFO  LoginPage :70 - Click On Login Button
+2023-12-17 22:12:546 INFO  LoginPage :60 - Enter username  test123@gmail.com to username  field [[ChromeDriver: chrome on windows (130fe1be5f5dbc6aee2bd6f017e6d285)] -> name: username]
+2023-12-17 22:12:902 INFO  LoginPage :65 - Enter Password  test123 to Password  field [[ChromeDriver: chrome on windows (130fe1be5f5dbc6aee2bd6f017e6d285)] -> name: password]
+2023-12-17 22:12:258 INFO  LoginPage :70 - Click On Login Button
+2023-12-17 22:12:521 INFO  LoginPage :60 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (fb21ef484c115270f5c6c82a9da56e88)] -> name: username]
+2023-12-17 22:12:682 INFO  LoginPage :65 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (fb21ef484c115270f5c6c82a9da56e88)] -> name: password]
+2023-12-17 22:12:814 INFO  LoginPage :70 - Click On Login Button
+2023-12-17 22:12:781 INFO  DashboardPage :31 - Click on admin tab
+2023-12-17 22:12:489 INFO  ViewSystemUsersPage :62 - Verify system users text
+2023-12-17 22:12:994 INFO  ViewSystemUsersPage :71 - Click on admin tab
+2023-12-17 22:12:515 INFO  AddUserPage :54 - Verify add user text
+2023-12-17 22:12:859 INFO  ViewSystemUsersPage :76 - Select user role from dropdown
+2023-12-17 22:12:286 INFO  AddUserPage :58 - Enter employee name 
+2023-12-17 22:12:168 INFO  LoginPage :60 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (1777c43f878b6a3e9ec88a1cfc2f52e7)] -> name: username]
+2023-12-17 22:12:326 INFO  LoginPage :65 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (1777c43f878b6a3e9ec88a1cfc2f52e7)] -> name: password]
+2023-12-17 22:12:484 INFO  LoginPage :70 - Click On Login Button
+2023-12-17 22:12:615 INFO  DashboardPage :31 - Click on admin tab
+2023-12-17 22:12:03 INFO  ViewSystemUsersPage :62 - Verify system users text
+2023-12-17 22:12:345 INFO  AddUserPage :67 - Enter username   to username  field Proxy element for: DefaultElementLocator 'By.cssSelector: div[class='oxd-form-row'] div[class='oxd-grid-2 orangehrm-full-width-grid'] div[class='oxd-grid-item oxd-grid-item--gutters'] div[class='oxd-input-group oxd-input-field-bottom-space'] div input[class='oxd-input oxd-input--active']'
+2023-12-17 22:12:123 INFO  LoginPage :60 - Enter username  Admin to username  field [[ChromeDriver: chrome on windows (d9c7d8afa318d83682966fba35b1a967)] -> name: username]
+2023-12-17 22:12:220 INFO  LoginPage :65 - Enter Password  admin123 to Password  field [[ChromeDriver: chrome on windows (d9c7d8afa318d83682966fba35b1a967)] -> name: password]
+2023-12-17 22:12:357 INFO  LoginPage :70 - Click On Login Button
+2023-12-17 22:12:492 INFO  DashboardPage :31 - Click on admin tab
+2023-12-17 22:12:361 INFO  ViewSystemUsersPage :62 - Verify system users text
+2023-12-17 22:12:658 INFO  AddUserPage :67 - Enter username   to username  field Proxy element for: DefaultElementLocator 'By.cssSelector: div[class='oxd-form-row'] div[class='oxd-grid-2 orangehrm-full-width-grid'] div[class='oxd-grid-item oxd-grid-item--gutters'] div[class='oxd-input-group oxd-input-field-bottom-space'] div input[class='oxd-input oxd-input--active']'

@@ -31,7 +31,7 @@ public class LoginSteps {
 
     @Then("I should be able to verify message {string}")
     public void iShouldBeAbleToVerifyMessage(String arg0) {
-        Assert.assertEquals(new DashboardPage().getDashboardText(),"Dashboard", "Error message");
+        Assert.assertEquals(new DashboardPage().getDashboardText(), "Dashboard", "Error message");
     }
 
     @And("I should login successfully")
@@ -68,7 +68,9 @@ public class LoginSteps {
         new LoginPage().enterPassword(password);
     }
 
-    @Then("I can verify the text <errorMessage>")
-    public void iCanVerifyTheTextErrorMessage() {
+
+    @Then("I Can Verify The Text Error Message {string}")
+    public void iCanVerifyTheTextErrorMessage(String errorMessage) {
+        Assert.assertEquals(new LoginPage().getUsernameRequiredText() , "<errorMessage>", "Text not Present");
     }
 }

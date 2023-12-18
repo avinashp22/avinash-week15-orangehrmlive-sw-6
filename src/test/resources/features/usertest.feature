@@ -9,7 +9,7 @@ Feature: Users Test
     When  I click on admin tab
     And   I should be able to verify "System Users" text
 
-
+  @smoke @sanity @regression
   Scenario: Admin should add user successfully
     When  I click on add button
     And   I can verify "Add User" text
@@ -22,12 +22,14 @@ Feature: Users Test
     And   I click on save button
     Then  I am able to verify message "Successfully saved"
 
+  @regression
   Scenario: Admin search the user created and verify user
     When  I enter username "Orange.Test" into username field
     And   I select user role "Admin"
     And   I click on search button
     Then  I should be able to verify the user should be in result list
 
+  @sanity @regression
   Scenario: Verify admin should delete the user successfully
     When  I enter username "Orange.Test" into username field
     And   I select user role "Admin"
@@ -39,9 +41,10 @@ Feature: Users Test
     Then  Click on ok button on popup
     And   I am able to verify text "Successfully Deleted"
 
+  @sanity @regression
   Scenario Outline: Search The User And Verify The Message Record Found
-    When  I enter username <username> into username field
-    And   I select user role <userrole>
+    When  I enter username "<username>"
+    And   I select userrole "<userrole>"
     And   I click on search button
     Then  I should be able to verify the user should be in result list
 

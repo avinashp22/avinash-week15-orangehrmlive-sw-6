@@ -114,4 +114,10 @@ public class UserSteps {
     public void iSelectUserRoleUserrole() {
         new ViewSystemUsersPage().selectUserRoleFromDropDown();
     }
+
+
+    @And("I select userrole {string}")
+    public void iSelectUserrole(String arg0) {
+        new ViewSystemUsersPage().selectUserRoleFromDropDown();
+    }
 }
