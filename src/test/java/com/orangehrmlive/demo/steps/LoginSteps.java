@@ -71,6 +71,6 @@ public class LoginSteps {
 
     @Then("I Can Verify The Text Error Message {string}")
     public void iCanVerifyTheTextErrorMessage(String errorMessage) {
-        Assert.assertEquals(new LoginPage().getUsernameRequiredText() , "<errorMessage>", "Text not Present");
+        Assert.assertEquals(new LoginPage().verifyErrorMessage(),"Required", "Required not Shown");
     }
 }
