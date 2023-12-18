@@ -1,6 +1,5 @@
 Feature: Users Test
-# Ananya Dash - does not work
-
+  @smoke @sanity @regression
   Background:
     Given I am on homepage
     When  I enter username "Admin"
